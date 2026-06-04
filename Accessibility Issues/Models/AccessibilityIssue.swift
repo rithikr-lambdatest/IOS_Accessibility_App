@@ -286,6 +286,20 @@ extension AccessibilityIssue {
             wcagReference: "2.4.3",
             category: .navigation,
             severity: .serious
+        ),
+        AccessibilityIssue(
+            title: "Images with text",
+            description: "Images that bake meaningful text into pixels. Fails when text is present and no exception applies (brand logo/wordmark, icon glyph, chart/graph, scanned document, or hidden/off-screen element). An accessibility label does not satisfy this rule — replace with native text, qualify as an exception, or hide.",
+            wcagReference: "1.4.5",
+            category: .text,
+            severity: .serious
+        ),
+        AccessibilityIssue(
+            title: "Meaningful reading order",
+            description: "VoiceOver focus order must follow a logical, meaningful sequence that matches the intended reading flow. Set the accessibilityElements array (or accessibilitySortPriority) so screen reader users encounter content in the right order.",
+            wcagReference: "1.3.2, 2.4.3",
+            category: .navigation,
+            severity: .serious
         )
     ]
-} 
+}

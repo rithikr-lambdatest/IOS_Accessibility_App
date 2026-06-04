@@ -126,6 +126,18 @@ struct HomeView: View {
                 }
             }
 
+            HStack(spacing: 10) {
+                NavigationLink(destination: ImagesWithTextView()) {
+                    DemoButton(title: "Images with Text")
+                }
+
+                NavigationLink(destination: MeaningfulReadingOrderView()) {
+                    DemoButton(title: "Meaningful Reading Order")
+                }
+
+                Spacer().frame(maxWidth: .infinity)
+            }
+
         }
         .padding()
         }
