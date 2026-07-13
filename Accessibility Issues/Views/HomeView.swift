@@ -131,7 +131,9 @@ struct HomeView: View {
                     DemoButton(title: "Images with Text")
                 }
 
-                Spacer().frame(maxWidth: .infinity)
+                NavigationLink(destination: MeaningfulReadingOrderView()) {
+                    DemoButton(title: "Meaningful Reading Order")
+                }
 
                 Spacer().frame(maxWidth: .infinity)
             }
