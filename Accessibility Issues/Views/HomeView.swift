@@ -2,8 +2,10 @@ import SwiftUI
 
 struct HomeView: View {
     @State private var isShowingSheet = false
+    @StateObject private var scrollHolder = ScrollArrowHolder()
 
     var body: some View {
+        VStack(spacing: 0) {
         ScrollView {
         VStack(spacing: 20) {
             Image("Logo")
@@ -135,11 +137,28 @@ struct HomeView: View {
                     DemoButton(title: "Meaningful Reading Order")
                 }
 
+                NavigationLink(destination: MinimumTextSizeView()) {
+                    DemoButton(title: "Minimum Text Size")
+                }
+            }
+
+            HStack(spacing: 10) {
+                NavigationLink(destination: InvalidRangeValuesView()) {
+                    DemoButton(title: "Invalid Range Values")
+                }
+
+                NavigationLink(destination: UniqueOptionNamesView()) {
+                    DemoButton(title: "Unique Option Names")
+                }
+
                 Spacer().frame(maxWidth: .infinity)
             }
 
         }
         .padding()
+        .background(ScrollViewFinder(holder: scrollHolder))
+        }
+        ScrollArrowBar(holder: scrollHolder)
         }
         .navigationBarHidden(true)
         .sheet(isPresented: $isShowingSheet) {
