@@ -151,7 +151,9 @@ struct HomeView: View {
                     DemoButton(title: "Unique Option Names")
                 }
 
-                Spacer().frame(maxWidth: .infinity)
+                NavigationLink(destination: ScreenReaderTestView()) {
+                    DemoButton(title: "Screen Reader Automation")
+                }
             }
 
         }
