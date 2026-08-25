@@ -1,6 +1,6 @@
 import SwiftUI
 
-struct QAIssuesView: View {
+struct InteractiveRoleUndefinedView: View {
     @State private var executedOrderDisplay = false
     @State private var dynamicButtonAccessible = true
 
@@ -228,6 +228,6 @@ struct QAIssuesView: View {
 
 #Preview {
     NavigationView {
-        QAIssuesView()
+        InteractiveRoleUndefinedView()
     }
 }

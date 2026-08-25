@@ -36,8 +36,8 @@ final class Accessibility_IssuesUITests: XCTestCase {
         let app = XCUIApplication()
         app.launch()
 
-        // Navigate to View Type Label page
-        app.buttons["View Type Label"].tap()
+        // Navigate to Redundant Role Keyword in Accessibility Label page
+        app.buttons["Redundant Role Keyword in Accessibility Label"].tap()
 
         // Wait for the page to load
         sleep(1)

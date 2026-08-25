@@ -1,6 +1,6 @@
 import SwiftUI
 
-struct TouchTargetSpacingView: View {
+struct InsufficientTouchTargetSpacingView: View {
     var body: some View {
         ScrollView {
             VStack(alignment: .leading, spacing: 20) {
@@ -412,6 +412,6 @@ struct TouchTargetSpacingView: View {
 
 #Preview {
     NavigationView {
-        TouchTargetSpacingView()
+        InsufficientTouchTargetSpacingView()
     }
 }

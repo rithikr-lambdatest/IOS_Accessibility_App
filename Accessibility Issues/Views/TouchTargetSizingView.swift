@@ -1,16 +1,16 @@
 import SwiftUI
 
-struct TouchTargetSizeView: View {
+struct TouchTargetSizingView: View {
     var body: some View {
         ScrollView {
             VStack(alignment: .leading, spacing: 20) {
 
                 VStack(alignment: .leading, spacing: 20) {
-                    Text("Touch Target Size and Spacing")
+                    Text("Touch Target Sizing")
                         .font(.title2)
                         .fontWeight(.bold)
 
-                    Text("Ensures interactive elements have adequate size (minimum 44x44 points on iOS) and spacing to accommodate users with motor or visual impairments.")
+                    Text("Ensures interactive elements meet the minimum touch target size of 44x44 points on iOS, so users with motor or visual impairments can activate them reliably.")
                         .font(.subheadline)
                         .foregroundColor(.secondary)
 
@@ -60,40 +60,6 @@ struct TouchTargetSizeView: View {
                             .cornerRadius(4)
                             .accessibilityLabel("Close")
                             .accessibilityIdentifier("tc02_small_icon_button")
-                        }
-
-                        Divider()
-
-                        // TC-03: Buttons too close together
-                        Group {
-                            Text("TC-03: Buttons with No Spacing")
-                                .font(.subheadline)
-                                .fontWeight(.semibold)
-                            Text("Small buttons placed with no spacing — easy to tap wrong target")
-                                .font(.caption)
-                            HStack(spacing: 0) {
-                                Button(action: {}) {
-                                    Image(systemName: "hand.thumbsup")
-                                        .font(.caption2)
-                                }
-                                .frame(width: 24, height: 24)
-                                .background(Color.red)
-                                .foregroundColor(.white)
-                                .cornerRadius(4)
-                                .accessibilityLabel("Like")
-                                .accessibilityIdentifier("tc03_close_button_1")
-
-                                Button(action: {}) {
-                                    Image(systemName: "hand.thumbsdown")
-                                        .font(.caption2)
-                                }
-                                .frame(width: 24, height: 24)
-                                .background(Color.red)
-                                .foregroundColor(.white)
-                                .cornerRadius(4)
-                                .accessibilityLabel("Dislike")
-                                .accessibilityIdentifier("tc03_close_button_2")
-                            }
                         }
                     }
                     .padding()
@@ -194,6 +160,6 @@ struct TouchTargetSizeView: View {
 
 #Preview {
     NavigationView {
-        TouchTargetSizeView()
+        TouchTargetSizingView()
     }
 }

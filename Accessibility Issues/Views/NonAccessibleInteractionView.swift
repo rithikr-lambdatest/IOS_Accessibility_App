@@ -1,6 +1,6 @@
 import SwiftUI
 
-struct InteractiveElementLabelView: View {
+struct NonAccessibleInteractionView: View {
     @State private var tc03ToggleNoLabel = true
     @State private var tc08ToggleWithLabel = true
 
@@ -9,7 +9,7 @@ struct InteractiveElementLabelView: View {
             VStack(alignment: .leading, spacing: 20) {
 
                 VStack(alignment: .leading, spacing: 20) {
-                    Text("Interactive Element Label")
+                    Text("Non-accessible Interaction")
                         .font(.title2)
                         .fontWeight(.bold)
 
@@ -218,6 +218,6 @@ struct InteractiveElementLabelView: View {
 
 #Preview {
     NavigationView {
-        InteractiveElementLabelView()
+        NonAccessibleInteractionView()
     }
 }

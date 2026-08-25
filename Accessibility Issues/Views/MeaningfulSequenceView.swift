@@ -131,7 +131,7 @@ private struct UIKitReadingOrder: UIViewRepresentable {
     }
 }
 
-struct MeaningfulReadingOrderView: View {
+struct MeaningfulSequenceView: View {
 
     // ---------- VIOLATIONS (visual order correct, a11y order wrong) ----------
     private static let violations: [ROCard] = [
@@ -274,7 +274,7 @@ struct MeaningfulReadingOrderView: View {
         ScrollView {
             VStack(alignment: .leading, spacing: 20) {
                 VStack(alignment: .leading, spacing: 8) {
-                    Text("Meaningful Reading Order — meaningful-sequence")
+                    Text("Meaningful Sequence")
                         .font(.title2).fontWeight(.bold)
                     Text("WCAG 1.3.2 (A), Severity Serious. iOS XCUITest preserves accessibilityElements order. Each violation lays views out in the CORRECT visual order but overrides accessibilityElements to the WRONG order; passes use natural order with no override.")
                         .font(.subheadline).foregroundColor(.secondary)
@@ -314,6 +314,6 @@ struct MeaningfulReadingOrderView: View {
 
 #Preview {
     NavigationView {
-        MeaningfulReadingOrderView()
+        MeaningfulSequenceView()
     }
 }

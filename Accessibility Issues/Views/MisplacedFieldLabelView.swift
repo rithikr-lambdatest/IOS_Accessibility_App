@@ -1,6 +1,6 @@
 import SwiftUI
 
-struct LabelAtFrontView: View {
+struct MisplacedFieldLabelView: View {
     @State private var notifications = true
     @State private var darkMode = false
 
@@ -344,6 +344,6 @@ struct LabelAtFrontView: View {
 
 #Preview {
     NavigationView {
-        LabelAtFrontView()
+        MisplacedFieldLabelView()
     }
 }

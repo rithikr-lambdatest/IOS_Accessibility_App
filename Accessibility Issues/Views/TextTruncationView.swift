@@ -10,7 +10,7 @@ struct TextTruncationView: View {
                         .font(.title2)
                         .fontWeight(.bold)
 
-                    Text("Ensures text resizes correctly when users increase their preferred font size. Text must remain visible and functional without truncation or layout issues up to 200% magnification.")
+                    Text("Ensures text stays fully visible when the user increases their preferred font size. Fixed-height containers and line limits clip content, so text must remain readable without truncation up to 200% magnification.")
                         .font(.subheadline)
                         .foregroundColor(.secondary)
 
@@ -21,24 +21,6 @@ struct TextTruncationView: View {
                         Text("Violation Test Cases")
                             .font(.headline)
                             .foregroundColor(.red)
-
-                        // TC-01: Fixed font size text
-                        Group {
-                            Text("TC-01: Fixed Font Size Text")
-                                .font(.subheadline)
-                                .fontWeight(.semibold)
-                            Text("Text uses a fixed font size that does not scale with Dynamic Type")
-                                .font(.caption)
-                            Text("This text will not scale")
-                                .font(.system(size: 16))
-                                .padding()
-                                .frame(maxWidth: .infinity, alignment: .leading)
-                                .background(Color.red.opacity(0.2))
-                                .cornerRadius(8)
-                                .accessibilityIdentifier("tc01_fixed_font_size")
-                        }
-
-                        Divider()
 
                         // TC-02: Fixed frame truncating text
                         Group {

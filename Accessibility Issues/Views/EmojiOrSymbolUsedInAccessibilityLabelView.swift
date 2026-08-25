@@ -1,6 +1,6 @@
 import SwiftUI
 
-struct SpecialCharacterLabelView: View {
+struct EmojiOrSymbolUsedInAccessibilityLabelView: View {
     @State private var emojiToggle = true
 
     var body: some View {
@@ -165,7 +165,7 @@ struct SpecialCharacterLabelView: View {
                             Text("⭐")
                                 .font(.title)
                                 .accessibilityLabel("⭐")
-                                .accessibilityIdentifier("tc06_emoji_static_text")
+                                .accessibilityIdentifier("tc07_emoji_static_text")
                             Text("✅ SKIP: Static text — not an interactive element")
                                 .font(.caption)
                         }
@@ -187,7 +187,7 @@ struct SpecialCharacterLabelView: View {
                                     .cornerRadius(8)
                             }
                             .accessibilityLabel("⭐ Favorites")
-                            .accessibilityIdentifier("tc07_emoji_with_text_button")
+                            .accessibilityIdentifier("tc08_emoji_with_text_button")
                             Text("✅ PASS: Label has descriptive text alongside emoji")
                                 .font(.caption)
                         }
@@ -209,7 +209,7 @@ struct SpecialCharacterLabelView: View {
                                     .cornerRadius(8)
                             }
                             .accessibilityLabel("Settings 🔧")
-                            .accessibilityIdentifier("tc08_text_with_emoji_button")
+                            .accessibilityIdentifier("tc09_text_with_emoji_button")
                             Text("✅ PASS: Label has descriptive text with trailing emoji")
                                 .font(.caption)
                         }
@@ -247,7 +247,7 @@ struct SpecialCharacterLabelView: View {
                                     .cornerRadius(8)
                             }
                             .accessibilityLabel("Add to Favorites")
-                            .accessibilityIdentifier("tc09_clean_text_button")
+                            .accessibilityIdentifier("tc11_clean_text_button")
                             Text("✅ PASS: Label is clean descriptive text")
                                 .font(.caption)
                         }
@@ -266,6 +266,6 @@ struct SpecialCharacterLabelView: View {
 
 #Preview {
     NavigationView {
-        SpecialCharacterLabelView()
+        EmojiOrSymbolUsedInAccessibilityLabelView()
     }
 }
