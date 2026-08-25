@@ -1,12 +1,12 @@
 import SwiftUI
 
-struct LinkTextPurposeView: View {
+struct NonDescriptiveLinkTextView: View {
     var body: some View {
         ScrollView {
             VStack(alignment: .leading, spacing: 20) {
 
                 VStack(alignment: .leading, spacing: 20) {
-                    Text("Link Text Purpose")
+                    Text("Non-Descriptive Link Text")
                         .font(.title2)
                         .fontWeight(.bold)
 
@@ -362,6 +362,6 @@ struct LinkTextPurposeView: View {
 
 #Preview {
     NavigationView {
-        LinkTextPurposeView()
+        NonDescriptiveLinkTextView()
     }
 }

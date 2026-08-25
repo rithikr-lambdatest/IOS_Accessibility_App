@@ -1,12 +1,12 @@
 import SwiftUI
 
-struct EditableElementLabelView: View {
+struct MissingEditableElementLabelView: View {
     var body: some View {
         ScrollView {
             VStack(alignment: .leading, spacing: 20) {
 
                 VStack(alignment: .leading, spacing: 20) {
-                    Text("Editable Element Accessibility Label")
+                    Text("Missing Editable Element Label")
                         .font(.title2)
                         .fontWeight(.bold)
 
@@ -73,6 +73,6 @@ struct EditableElementLabelView: View {
 
 #Preview {
     NavigationView {
-        EditableElementLabelView()
+        MissingEditableElementLabelView()
     }
 }

@@ -1,6 +1,6 @@
 import SwiftUI
 
-struct ViewStateLabelView: View {
+struct RedundantStateKeywordInAccessibilityLabelView: View {
     @State private var menuExpanded = true
     @State private var tc01DarkModeOn = true
     @State private var tc02WifiOff = false
@@ -15,7 +15,7 @@ struct ViewStateLabelView: View {
 
                 // AT-881: View State in Accessibility Labels
                 VStack(alignment: .leading, spacing: 20) {
-                    Text("AT-881: View State in Labels")
+                    Text("AT-881: Redundant State Keyword in Accessibility Label")
                         .font(.title2)
                         .fontWeight(.bold)
 
@@ -305,6 +305,6 @@ struct ViewStateLabelView: View {
 
 #Preview {
     NavigationView {
-        ViewStateLabelView()
+        RedundantStateKeywordInAccessibilityLabelView()
     }
 }

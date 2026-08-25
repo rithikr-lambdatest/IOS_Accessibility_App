@@ -1,6 +1,6 @@
 import SwiftUI
 
-struct LabelInNameView: View {
+struct MismatchedLabelTextView: View {
     @State private var tc03DarkMode = true
     @State private var tc09Notifications = false
 
@@ -344,6 +344,6 @@ struct LabelInNameView: View {
 
 #Preview {
     NavigationView {
-        LabelInNameView()
+        MismatchedLabelTextView()
     }
 }

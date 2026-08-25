@@ -1,6 +1,6 @@
 import SwiftUI
 
-struct CheckboxElementLabelView: View {
+struct MissingSwitchElementLabelView: View {
     @State private var isChecked1 = false
     @State private var isChecked2 = true
     @State private var isChecked3 = false
@@ -13,7 +13,7 @@ struct CheckboxElementLabelView: View {
             VStack(alignment: .leading, spacing: 20) {
 
                 VStack(alignment: .leading, spacing: 20) {
-                    Text("Checkbox Element Accessibility Label")
+                    Text("Missing Switch Element Label")
                         .font(.title2)
                         .fontWeight(.bold)
 
@@ -169,6 +169,6 @@ struct CheckboxElementLabelView: View {
 
 #Preview {
     NavigationView {
-        CheckboxElementLabelView()
+        MissingSwitchElementLabelView()
     }
 }

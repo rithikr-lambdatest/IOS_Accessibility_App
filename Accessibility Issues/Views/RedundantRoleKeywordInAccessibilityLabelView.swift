@@ -1,6 +1,6 @@
 import SwiftUI
 
-struct ViewTypeLabelView: View {
+struct RedundantRoleKeywordInAccessibilityLabelView: View {
     @State private var darkModeSwitch = true
     @State private var darkModeToggle = false
 
@@ -10,7 +10,7 @@ struct ViewTypeLabelView: View {
 
                 // AT-882: View Type in Accessibility Labels
                 VStack(alignment: .leading, spacing: 20) {
-                    Text("AT-882: View Type in Labels")
+                    Text("AT-882: Redundant Role Keyword in Accessibility Label")
                         .font(.title2)
                         .fontWeight(.bold)
 
@@ -324,6 +324,6 @@ struct ViewTypeLabelView: View {
 
 #Preview {
     NavigationView {
-        ViewTypeLabelView()
+        RedundantRoleKeywordInAccessibilityLabelView()
     }
 }
